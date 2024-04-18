@@ -1,0 +1,9 @@
+2. a) 
+- Logowanie zdarzeń: System powinien rejestrować wszystkie istotne zdarzenia, takie jak rozpoczęcie i zakończenie przetwarzania plików, napotkane błędy, czasy odpowiedzi itp. Logi te pomogą w identyfikacji problemów i analizie przyczyn ich wystąpienia.
+- Monitoring statusu: System powinien regularnie sprawdzać status działania głównego skryptu lub usługi. Może to obejmować sprawdzanie, czy skrypt jest uruchomiony, czy występują błędy krytyczne, czy liczba przetworzonych plików jest zgodna z oczekiwaniami itp.
+- Alerting: System powinien być wyposażony w mechanizm powiadamiania w przypadku wystąpienia problemów lub awarii. Powiadomienia te mogą być wysyłane w formie e-maili, powiadomień push, komunikatów SMS itp.
+- Monitoring folderów: System powinien regularnie sprawdzać zawartość folderów wejściowych i wyjściowych w celu upewnienia się, że pliki są przetwarzane zgodnie z oczekiwaniami i przenoszone poprawnie.
+
+
+2. b) 
+- Skrypt powinien być uruchamiany na serwerze, na którym ma dostęp do folderów wejściowego i wyjściowego (jeśli w wybranym katalog nie będzie zarówno folderu z danymi wejściowymi jak i folderu na dane wyjściowe, skrypt utworzy je samodzielnie dodatkowo tworząc folder, do którego przeniesie przetworzone już pliki z folderu wejściowego). Skrypt można uruchomić w wybranym katalogu na serwerze. Należy upewnić się, że na serwerze zainstalowany jest Python w wersji 3.6 lub wyższej. Skrypt można uruchomić za pomocą menedżera procesów, takiego jak systemd w systemie Linux lub Harmonogram zadań w systemie Windows, aby zapewnić jego ciągłe działanie w tle.

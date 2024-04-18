@@ -1,0 +1,10 @@
+1. Skrypt tworzy (jeśli nie istnieją) 3 folder:
+	- "input_folder" - folder na dane wejściowe zapisane w formacie JSON.
+	- "output_folder" - folder na dane wyjściowe zapisane w formacie XML.
+	- "processed_folder" - folder na poprawnie przetworzone dane w formacie JSON przeniesione z folder "input_folder".
+
+2. Zasada działa skrypt w skrócie:
+	- Skrypt konwertuje pliki JSON z folderu wejściowego na format XML, a następnie przenosi je do folderu wyjściowego.
+	- Upewnienia się, że plik wejściowy został w pełni zapisany przed konwersją.
+	- Obsługa błędów zapobiega zablokowaniu przepływu w przypadku wystąpienia problemów.
+	- Monitorowanie folderów jest realizowane w pętli, która regularnie sprawdza obecność plików JSON w folderze 			wejściowym.
